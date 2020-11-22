@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		table{
+			font-family:georgia;font-size:"30";font-style: "bold";width: 450px;padding:auto;margin: auto;text-align: center;
+		}
+		input[type=textfield],input[type=password]{
+		width:100% ;height:100%; margin:auto;  
+         padding: 10px 10px;  
+        display: inline-block;  
+        border: 2px solid black;   
+        box-sizing: border-box; 
+        border-radius: 30px;
+        outline: none;
+		}
+		.container{
+			width: 450px;height:330px;margin-left:390px;margin-top:70px ;background-color:#3EDCEA;box-sizing: content-box;border-radius: 40px;border: 3px solid black;padding-bottom:80px;
+		}
+		img{
+			border-radius: 50%;margin-bottom:0px;padding-bottom: 0px;
+		}
+	</style>
+	<script type="text/javascript">
+		function validation(){
+			var name=table.username.value;
+			var pass=table.password.value;
+			alert(name+pass); 
+			return true;
+		}
+	</script>
+</head>
+<body>
+	<div class="container" align="center">
+		<br>
+		<img src="avatar.jpg" width="120px" height="120px"  alt="avatar">
+		<font size="6" style="font-style: bold">
+		<table cellpadding="7" align="center" cols="2" onsubmit="return validation();">
+		<tr>
+			<td>User Name</td>
+			<td><input type="textfield" name="username" placeholder="Enter username"></td>
+		</tr><br>
+		<tr>
+			<td>Password</td>
+			<td><input type="password" name="password" placeholder="Enter password"></td>
+		</tr>
+		<br><br>
+		<tr>
+			<td align="center" cellspacing="7"><input type="reset" name="retry" value="Reset"></td>
+			<td align="center"><input type="submit" name="submit" value="Submit"></td>
+		</tr>
+	</table></font>
+  </div>
+</body>
+</html>
